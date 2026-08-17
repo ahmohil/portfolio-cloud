@@ -1,3 +1,10 @@
+export interface ExperienceHighlight {
+  label: string;
+  title: string;
+  blurb: string;
+  tags: string[];
+}
+
 export interface Experience {
   company: string;
   title: string;
@@ -6,6 +13,7 @@ export interface Experience {
   location: string;
   current?: boolean;
   bullets: string[];
+  highlight?: ExperienceHighlight;
 }
 
 export interface Project {
